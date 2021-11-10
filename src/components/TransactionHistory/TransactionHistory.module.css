@@ -1,0 +1,34 @@
+.transactionHistory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  background-color: rgb(138, 206, 238);
+  color: #ffffff;
+}
+
+.head th {
+  width: 350px;
+}
+
+.head th:not(:last-child) {
+  border-right: 1px solid #e0e5e7;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(230, 226, 226);
+}
+
+.body td {
+  width: 350px;
+  text-align: center;
+  border-bottom: 1px solid rgb(230, 226, 226);
+}
+
+.body td:not(:last-child) {
+  border-right: 1px solid rgb(230, 226, 226);
+}

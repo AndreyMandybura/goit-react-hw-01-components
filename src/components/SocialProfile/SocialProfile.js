@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import defaultImage from '../default.jpg';
+import s from './SocialProfile.module.css';
 
 const SocialProfile = ({
   name,
@@ -9,26 +10,26 @@ const SocialProfile = ({
   stats = { followers: 0, views: 0, likes: 0 },
 }) => {
   return (
-    <div class="profile">
-      <div class="description">
-        <img src={avatar} alt={name} class="avatar" />
-        <p class="name">{name}</p>
-        <p class="tag">{tag}</p>
-        <p class="location">{location}</p>
+    <div className={s.profile}>
+      <div className={s.description}>
+        <img src={avatar} alt={name} className={s.avatar} />
+        <p className={s.name}>{name}</p>
+        <p className={s.tag}>{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
 
-      <ul class="stats">
-        <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{stats.followers}</span>
+      <ul className={s.stats}>
+        <li className={s.item}>
+          <span className={s.label}>Followers</span>
+          <span className={s.quantity}>{stats.followers}</span>
         </li>
-        <li>
-          <span class="label">Views</span>
-          <span class="quantity">{stats.views}</span>
+        <li className={s.item}>
+          <span className={s.label}>Views</span>
+          <span className={s.quantity}>{stats.views}</span>
         </li>
-        <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{stats.likes}</span>
+        <li className={s.item}>
+          <span className={s.label}>Likes</span>
+          <span className={s.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
